@@ -37,6 +37,32 @@ npm run dev      # http://localhost:5173
 npm run build    # → dist/
 ```
 
+## Deploy
+
+Live at **[abstrack.vercel.app](https://abstrack.vercel.app)** (Vercel project
+`codewithalok/abstrack`).
+
+Pushing to `master` on `origin` auto-deploys to production — the Vercel project is
+connected to the GitHub repo. A manual deploy is still available if you need one:
+
+```bash
+vercel --prod
+```
+
+The code lives in two GitHub repos, kept in sync:
+
+| Remote | URL |
+| --- | --- |
+| `origin` | https://github.com/GurpreetDel/abstrack (connected to Vercel) |
+| `alokkhare2025tech` | https://github.com/alokkhare2025tech/abstrack |
+
+Each remote belongs to a different GitHub account, so pushing to both takes two commands —
+a single `git push` only updates `origin`.
+
+Because the site is a single page with no router, [`vercel.json`](vercel.json) rewrites
+stray paths back to `index.html` and sets the asset caching rules. Edit it if you add
+real routes.
+
 ## Credits & disclaimer
 
 This is an unofficial fan-made tribute site. It is not affiliated with, endorsed by, or

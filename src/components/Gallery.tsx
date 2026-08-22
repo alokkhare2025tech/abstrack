@@ -33,7 +33,9 @@ export default function Gallery() {
       </div>
 
       <p className="mt-8 text-center text-xs text-mist/60">
-        Photos from his public Instagram @docamber — full credits in the footer. Rights holders may request removal anytime.
+        Photos from his public Instagram @abstrackmusic.official and his event brands
+        @cult.x.ind, @awestruck.by.abstrack and @offgrid.entertainment — full credits in the
+        footer. Rights holders may request removal anytime.
       </p>
     </section>
   )
